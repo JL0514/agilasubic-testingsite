@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operations - Agila Subic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        accent: '#0ea5e9'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigation Header -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-primary transition-colors text-sm font-medium">SUSTAINABILITY</a>
+                    <a href="#" class="text-gray-700 hover:text-primary transition-colors text-sm font-medium">OPERATIONS</a>
+                </div>
+                
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-gray-900">AGILA</span>
+                    <span class="text-2xl font-bold text-accent mx-1">×</span>
+                    <span class="text-2xl font-bold text-gray-900">SUBIC</span>
+                    <sup class="text-xs text-gray-500 ml-1">®</sup>
+                </div>
+                
+                <div class="flex items-center space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-primary transition-colors text-sm font-medium">COMMUNITY</a>
+                    <a href="#" class="text-gray-700 hover:text-primary transition-colors text-sm font-medium">CONTACT US</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Header Section -->
+        <div class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">OPERATIONS</h1>
+            <p class="text-lg text-orange-600 font-medium mb-6">Delivering Efficiency, Safety, and Excellence. Every Day!</p>
+            <p class="text-gray-700 max-w-3xl mx-auto leading-relaxed">
+                At Agila Subic Compass Inc., our Operations Team is the core of real estate management within the shipyard, ensuring that all facilities are maintained to the highest standards.
+            </p>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Preventive Maintenance & Rapid Response -->
+            <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-all cursor-pointer transform hover:scale-105" onclick="openModal('maintenance')">
+                <div class="w-20 h-20 bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-tools text-accent text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Preventive Maintenance & Rapid Response</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    We don't wait for things to break; we proactively manage maintenance to ensure continuous operation.
+                </p>
+                <div class="mt-4 text-accent text-sm font-medium">Click to view services →</div>
+            </div>
+
+            <!-- Clean, Safe, and Organized Spaces -->
+            <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-all cursor-pointer transform hover:scale-105" onclick="openModal('cleaning')">
+                <div class="w-20 h-20 bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-hand-paper text-accent text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Clean, Safe, and Organized Spaces</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Our daily janitorial services ensure that all areas are kept clean, safe, and organized for optimal functionality.
+                </p>
+                <div class="mt-4 text-accent text-sm font-medium">Click to view services →</div>
+            </div>
+
+            <!-- Monitoring & Reporting -->
+            <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-all cursor-pointer transform hover:scale-105" onclick="openModal('monitoring')">
+                <div class="w-20 h-20 bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-chart-bar text-accent text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Monitoring & Reporting</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    We track utilities, vendor performance, and operational efficiency to ensure we meet our high standards.
+                </p>
+                <div class="mt-4 text-accent text-sm font-medium">Click to view services →</div>
+            </div>
+
+            <!-- Security and Access Control -->
+            <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-all cursor-pointer transform hover:scale-105" onclick="openModal('security')">
+                <div class="w-20 h-20 bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-lock text-accent text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Security and Access Control</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    We safeguard the shipyard with strict access control and 24/7 security operations.
+                </p>
+                <div class="mt-4 text-accent text-sm font-medium">Click to view services →</div>
+            </div>
+
+            <!-- Logistics & Vendor Coordination -->
+            <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-all cursor-pointer transform hover:scale-105" onclick="openModal('logistics')">
+                <div class="w-20 h-20 bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-truck text-accent text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Logistics & Vendor Coordination</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    We manage deliveries and contractor works to ensure seamless operations across the facility.
+                </p>
+                <div class="mt-4 text-accent text-sm font-medium">Click to view services →</div>
+            </div>
+
+            <!-- Responsive Communication Channels -->
+            <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-all cursor-pointer transform hover:scale-105" onclick="openModal('communication')">
+                <div class="w-20 h-20 bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-comments text-accent text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Responsive Communication Channels</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Through FacilityBot, we provide fast and reliable communication to address all inquiries efficiently.
+                </p>
+                <div class="mt-4 text-accent text-sm font-medium">Click to view services →</div>
+            </div>
+        </div>
+
+        <!-- Modal Overlay -->
+        <div id="modalOverlay" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+            <div class="bg-white rounded-xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-6">
+                        <h2 id="modalTitle" class="text-2xl font-bold text-gray-900"></h2>
+                        <button onclick="closeModal()" class="text-gray-500 hover:text-gray-700 text-2xl">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div id="modalContent" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Content will be dynamically loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Force light mode - remove any dark class
+        document.documentElement.classList.remove('dark');
+
+        // LURA-based service categories for Agila Subic Compass Inc.
+        const serviceData = {
+            maintenance: {
+                title: "Preventive Maintenance & Rapid Response",
+                items: [
+                    {
+                        name: "Power Production & Distribution",
+                        description: "Operation and maintenance of main transformers, substations, and back-up generators for shared facilities",
+                        image: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=300&h=200&fit=crop",
+                        icon: "fas fa-bolt"
+                    },
+                    {
+                        name: "Water Treatment Systems",
+                        description: "Operation and maintenance of water treatment plants, reservoirs, and distribution systems",
+                        image: "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=300&h=200&fit=crop",
+                        icon: "fas fa-tint"
+                    },
+                    {
+                        name: "Wastewater Management",
+                        description: "Operation and maintenance of wastewater treatment plants, sewage, and drainage systems",
+                        image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=300&h=200&fit=crop",
+                        icon: "fas fa-water"
+                    },
+                    {
+                        name: "Emergency Response Services",
+                        description: "First response fire-fighting, ambulance services, oil spill response, and emergency road clearing",
+                        image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=300&h=200&fit=crop",
+                        icon: "fas fa-ambulance"
+                    },
+                    {
+                        name: "Facility Maintenance & Upgrades",
+                        description: "Tenant-specific repair, maintenance, and upgrade services as optional LURA services",
+                        image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=300&h=200&fit=crop",
+                        icon: "fas fa-tools"
+                    },
+                    {
+                        name: "Industrial Gas & Petrol Distribution",
+                        description: "Storage and distribution of industrial gases and operation of petrol stations within the property",
+                        image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=300&h=200&fit=crop",
+                        icon: "fas fa-gas-pump"
+                    }
+                ]
+            },
+            cleaning: {
+                title: "Clean, Safe, and Organized Spaces",
+                items: [
+                    {
+                        name: "Common Groundskeeping",
+                        description: "Groundskeeping for main roads, access roads, buffer zones, and perimeter fence areas",
+                        image: "https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=300&h=200&fit=crop",
+                        icon: "fas fa-leaf"
+                    },
+                    {
+                        name: "Waste Management Services",
+                        description: "Garbage collection and waste disposal services as optional LURA services",
+                        image: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=300&h=200&fit=crop",
+                        icon: "fas fa-recycle"
+                    },
+                    {
+                        name: "Vector Control Programs",
+                        description: "Pest and vector control services to maintain safe and hygienic facility conditions",
+                        image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=200&fit=crop",
+                        icon: "fas fa-bug"
+                    },
+                    {
+                        name: "Housekeeping & Billeting",
+                        description: "Professional housekeeping and accommodation services for facility personnel",
+                        image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=300&h=200&fit=crop",
+                        icon: "fas fa-bed"
+                    },
+                    {
+                        name: "Laundry Services",
+                        description: "Commercial laundry services for facility operations and personnel",
+                        image: "https://images.unsplash.com/photo-1527515862127-a4fc05baf7a5?w=300&h=200&fit=crop",
+                        icon: "fas fa-tshirt"
+                    },
+                    {
+                        name: "Road & Area Clearing",
+                        description: "Clearing of vegetation, garbage, and upkeep of roadways and common areas",
+                        image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=300&h=200&fit=crop",
+                        icon: "fas fa-broom"
+                    }
+                ]
+            },
+            monitoring: {
+                title: "Monitoring & Reporting",
+                items: [
+                    {
+                        name: "HSE Compliance & Monitoring",
+                        description: "Health, Safety, and Environmental compliance monitoring and HSE induction programs",
+                        image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=300&h=200&fit=crop",
+                        icon: "fas fa-shield-alt"
+                    },
+                    {
+                        name: "Bunkering Activity Oversight",
+                        description: "Monitoring and compliance oversight for all bunkering operations within the facility",
+                        image: "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=300&h=200&fit=crop",
+                        icon: "fas fa-ship"
+                    },
+                    {
+                        name: "Master Insurance Management",
+                        description: "GSIS site insurance and comprehensive general liability insurance administration",
+                        image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=300&h=200&fit=crop",
+                        icon: "fas fa-file-contract"
+                    },
+                    {
+                        name: "Cost Assessment & Allocation",
+                        description: "Shared cost methodology development and assessment collection for facility operations",
+                        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=300&h=200&fit=crop",
+                        icon: "fas fa-calculator"
+                    },
+                    {
+                        name: "LURA Compliance Monitoring",
+                        description: "Ensuring compliance with Land Use and Services Agreement provisions and obligations",
+                        image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=300&h=200&fit=crop",
+                        icon: "fas fa-clipboard-check"
+                    },
+                    {
+                        name: "Medical Clinic Services",
+                        description: "On-site medical clinic provision for facility personnel and emergency health services",
+                        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
+                        icon: "fas fa-hospital"
+                    }
+                ]
+            },
+            security: {
+                title: "Security and Access Control",
+                items: [
+                    {
+                        name: "Access & Transit Control",
+                        description: "Comprehensive access control systems for authorized entry and movement within the facility",
+                        image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop",
+                        icon: "fas fa-key"
+                    },
+                    {
+                        name: "Entry Control Point Security",
+                        description: "Professional security services at all designated entry and exit points",
+                        image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=300&h=200&fit=crop",
+                        icon: "fas fa-door-open"
+                    },
+                    {
+                        name: "Quay Line Security",
+                        description: "Specialized security services for maritime operations and quay line protection",
+                        image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop",
+                        icon: "fas fa-anchor"
+                    },
+                    {
+                        name: "Perimeter Security",
+                        description: "24/7 perimeter monitoring and protection of the entire facility boundary",
+                        image: "https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?w=300&h=200&fit=crop",
+                        icon: "fas fa-video"
+                    },
+                    {
+                        name: "Quick Reaction Force",
+                        description: "Rapid response security team for immediate threat assessment and emergency response",
+                        image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=200&fit=crop",
+                        icon: "fas fa-running"
+                    },
+                    {
+                        name: "Fire Protection Systems",
+                        description: "Comprehensive fire-fighting services including emergency response for structural, electrical, and wildland fires",
+                        image: "https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=300&h=200&fit=crop",
+                        icon: "fas fa-fire-extinguisher"
+                    }
+                ]
+            },
+            logistics: {
+                title: "Logistics & Vendor Coordination",
+                items: [
+                    {
+                        name: "Transportation Services",
+                        description: "Coordinated transportation solutions for personnel and logistics within the facility",
+                        image: "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=300&h=200&fit=crop",
+                        icon: "fas fa-bus"
+                    },
+                    {
+                        name: "General Site Operations",
+                        description: "Administrative, finance, and operational activities for overall site management",
+                        image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=300&h=200&fit=crop",
+                        icon: "fas fa-building"
+                    },
+                    {
+                        name: "SSEZ Regulatory Compliance",
+                        description: "Ensuring compliance with Subic Special Economic Zone rules and government authority requirements",
+                        image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=300&h=200&fit=crop",
+                        icon: "fas fa-balance-scale"
+                    },
+                    {
+                        name: "Shared Cost Administration",
+                        description: "Management of shared facility costs, assessments, and equitable allocation among tenants",
+                        image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=300&h=200&fit=crop",
+                        icon: "fas fa-coins"
+                    },
+                    {
+                        name: "Sublessee Coordination",
+                        description: "Management of sublessee rights, obligations, and coordination with yard tenants",
+                        image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=300&h=200&fit=crop",
+                        icon: "fas fa-users"
+                    },
+                    {
+                        name: "Minor Vehicular Services",
+                        description: "Emergency vehicular assistance and minor repair services within the facility",
+                        image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=300&h=200&fit=crop",
+                        icon: "fas fa-car"
+                    }
+                ]
+            },
+            communication: {
+                title: "Responsive Communication Channels",
+                items: [
+                    {
+                        name: "IT & Communication Systems",
+                        description: "Modern information technology and communication infrastructure services",
+                        image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=300&h=200&fit=crop",
+                        icon: "fas fa-network-wired"
+                    },
+                    {
+                        name: "FacilityBot Communication Platform",
+                        description: "Advanced facility management communication system for efficient inquiry handling",
+                        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=300&h=200&fit=crop",
+                        icon: "fas fa-robot"
+                    },
+                    {
+                        name: "Cafeteria & Common Services",
+                        description: "Common canteen (SOS) and dining services for facility personnel and visitors",
+                        image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=300&h=200&fit=crop",
+                        icon: "fas fa-utensils"
+                    },
+                    {
+                        name: "LURA Notification System",
+                        description: "Structured communication system for LURA updates, rule changes, and tenant notifications",
+                        image: "https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=300&h=200&fit=crop",
+                        icon: "fas fa-bell"
+                    },
+                    {
+                        name: "Association Communication",
+                        description: "Official communication channels between the Association and all facility stakeholders",
+                        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop",
+                        icon: "fas fa-handshake"
+                    },
+                    {
+                        name: "Emergency Communication Network",
+                        description: "Dedicated communication systems for emergency response and crisis management",
+                        image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=300&h=200&fit=crop",
+                        icon: "fas fa-broadcast-tower"
+                    }
+                ]
+            }
+        };
+
+        function openModal(serviceType) {
+            const modal = document.getElementById('modalOverlay');
+            const title = document.getElementById('modalTitle');
+            const content = document.getElementById('modalContent');
+            
+            const service = serviceData[serviceType];
+            title.textContent = service.title;
+            
+            content.innerHTML = service.items.map(item => `
+                <div class="bg-gray-50 rounded-lg p-4 hover:shadow-md transition-shadow">
+                    <div class="aspect-w-16 aspect-h-9 mb-4">
+                        <img src="${item.image}" alt="${item.name}" class="w-full h-32 object-cover rounded-lg" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik0xNTAgMTAwTDEyNSA3NUgxNzVMMTUwIDEwMFoiIGZpbGw9IiM5Q0EzQUYiLz4KPC9zdmc+'">
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <i class="${item.icon} text-accent mr-2"></i>
+                        <h3 class="font-semibold text-gray-900 text-sm">${item.name}</h3>
+                    </div>
+                    <p class="text-gray-600 text-sm">${item.description}</p>
+                </div>
+            `).join('');
+            
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('modalOverlay');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('modalOverlay').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
